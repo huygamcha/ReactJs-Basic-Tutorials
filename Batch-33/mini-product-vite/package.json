@@ -13,11 +13,14 @@
     "@rollup/plugin-inject": "^5.0.3",
     "@tanstack/react-query": "^4.32.6",
     "axios": "^1.4.0",
+    "classnames": "^2.3.2",
     "create-vite": "^4.4.1",
+    "normalize.css": "^8.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-owl-carousel": "^2.3.3",
     "swiper": "^10.1.0",
+    "typescript": "^5.1.6",
     "zustand": "^4.4.1"
   },
   "devDependencies": {
@@ -32,7 +35,6 @@
     "eslint-plugin-react-refresh": "^0.4.3",
     "react-router-dom": "^6.15.0",
     "tailwindcss": "^3.3.3",
-    "typescript": "^5.0.2",
     "vite": "^4.4.5"
   }
 }

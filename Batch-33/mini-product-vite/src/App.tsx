@@ -10,31 +10,17 @@ import Layout from "./components/layouts/Layout";
 import ProductDetail from "./pages/ProductDetail";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import LoginPage from "./pages/LoginPage";
+import GetProfile from "./components/GetProfile";
 
 // Create a client
-const queryClient = new QueryClient();
+// const queryClient = new QueryClient();
 
 function App() {
   console.log("App Render");
 
   return (
     <>
-      <QueryClientProvider client={queryClient}>
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Layout />}>
-              <Route index element={<HomePage />} />
-              <Route path="/blog" element={<BlogPage />} />
-              <Route path="/product" element={<ProductPage />} />
-              <Route path="/product/:id" element={<ProductDetail />} />
-              <Route path="/category" element={<CategoryPage />} />
-              <Route path="/login" element={<LoginPage />} />
-              {/* Đặt dòng này cuối cùng */}
-              <Route path="*" element={<NoPage />} />
-            </Route>
-          </Routes>
-        </BrowserRouter>
-      </QueryClientProvider>
+      <GetProfile />
     </>
   );
 }
